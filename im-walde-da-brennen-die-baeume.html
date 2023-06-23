@@ -19,7 +19,706 @@
 
 
 <style type="text/css">
+/* just to get default settings */
+a {text-decoration:none;}
+:link,:visited { text-decoration:none; }
 
+a img,:link img,:visited img { border:none; }
+
+ul,ol {list-style:none; }
+
+h1 { font-size:1.7em; }  h2{ font-size:1.5em; } h3{ font-size:1.3em; } h4 { font-size:1.1em; } p { font-size:1.0em; }
+
+b {color:#219B18; } 
+i { color:#009933; font-weight:bold; }
+big {color:#66CC00; }
+em  {font-weight:bold; color:#FF9900;}
+
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,blockquote,fieldset,input,img,pre,form,body,html,a,table,tr,td { margin:0; padding:0; border-style:none; }
+table {vertical-align:top;}
+/* div { border: 2px dotted red; }  */
+
+/* allgemeine Link Farben */
+a {font-size:1em; font-weight: bold;}
+a { color:#003399; } /* dunkelblau als grundfarbe */
+a:hover { color: #006699; } /* tuerkis #7C9CAA #006699*/
+a:active  { color: #444444; } /* grau */
+a:visited {color:#7C9CAA; } /* hell tuerkis-grau #7C9CAA #006699*/
+
+
+li {line-height:1.7em;}
+
+.autor9 {margin-top:2.2em!important;}
+/* text-align:left;*/
+table  {
+border-spacing: 0px;
+border-collapse: separate;
+
+}
+.videoWrapper {
+
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	width:auto!important;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Standard Reihenfolge */
+/*
+a {
+ font-family:Verdana,Arial,Helvetica;
+ font-weight:normal;
+ font-size:10pt;
+ color:#000000;
+ text-decoration:none;
+}
+
+a:visited {}
+a:focus {}
+a:hover {
+ color:#ffffff;
+ text-decoration:underline;}
+a:active {}
+
+*/
+
+/* grün: #090 */
+
+
+
+html, body {
+color:#333333;
+background-color:#ffffff; /* helles gelb #fffff5*/
+
+/*font: 100%/120% Verdana, Arial, Helvetica, sans-serif;*/
+font-family: verdana, arial, helvetica, sans-serif;
+font-size:100.1%;}
+
+
+p { 
+
+font-family:"Lucida Grande", arial, helvetica, sans-serif;
+font-size:1.06em;
+/*font-size-adjust:none; nochmal klären*/
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:1.6em;
+
+letter-spacing:0em;
+word-spacing:0em;
+text-align:left; }
+
+
+/* h3:before {content:"\00BB" " ";}  ">>" Vor h3 einfügen */
+div#content h3{
+/* Überschrift im Text, padding um Raum zu schaffen */
+color:green;
+margin:1.6em 0 0.6em 0;
+padding:0.2em 0 0.2em 0.0em;
+font-size:1.1em; font-weight: bold;
+}
+
+div#content   p  {margin:0.1em 1em 0.6em 2em;}
+div#content  ol  {margin:0.6em 1.2em 0em 5.0em; list-style-type:decimal; 	list-style-position: inside;}
+div#content .psmall {font-size: 0.8em; line-height:1.2em; margin:0.2em 0em 0em 0em; text-align:justify;} /* für  */
+div#content .pbig {font-size: 0.9em; line-height:1.3em; margin:0.2em 0em 0em 0em; text-align:justify;} /* für  */
+div#content .pbig2 {margin:0.9em 0.5em 0.1em 0.4em; text-align:justify; line-height:1.3em;}
+
+div#content .pblue0 {color:#0033CC;} /* normal  */
+div#content .pblue1 {color:#0033CC; font-weight:bold;} /* fett , zur strukturierung, ohne Semantische Relevanz*/
+
+
+
+
+hr {
+color:white;
+height: 1px;
+margin:1.6em 0.0em 1em 0.0em;
+border-width:0px;
+border-bottom: 2px dotted #999;
+}
+
+div#nav hr {
+color:white;
+height: 1px;
+font-size:1.0em;
+margin:0.2em 0.4em 0em 1.6em;
+border-width:0px;
+border-bottom: 0px dotted #000000;
+}
+
+h3 {
+/* default für index Welcome Text */
+font-size:1.0em;
+color:#D9372F;
+
+}
+div#content h4 {
+/* default für index Welcome Text */
+font-size:0.95em;
+color:#009900;
+font-weight:bold;
+margin-bottom:0.2em;
+margin-top:0.4em;
+}
+/*
+h4 {
+ default für index Welcome Text 
+font-size:1.1em;
+color:#D9372F;
+font-weight:bold;
+letter-spacing:0.3em;}
+*/
+
+
+h5 {
+/* default für index Welcome Text */
+color:green;
+}
+
+#container {
+/* für den geamten Inhalt: head, content, nav ... */
+margin:0.2em 0.2em 0.2em 0.2em; max-width:80em;}
+
+
+/* Box rechts für Links und so */
+#boxr {
+margin: 1.6em 1.6em 0em 72em;
+padding: 0.2em;
+ width: 13em;
+border: 0.4em solid #003399;
+
+}
+#boxr p {padding: 0.2em; margin: 0.2em;  }
+
+/* Box links für logo  Farbe  des grüns color:#A6D480; */
+#boxlg {
+margin: 0.6em 0em 0.2em 1.7em;
+padding: 0.0em;
+ width: 15em;
+border: none;}
+#boxlg p {padding: 0.2em; margin: 0.2em;  }
+#boxlg a  {font-size:0.9em;   }
+#boxlg a  img {margin: 0em 0em 0em 0em; padding-bottom: 0.4em; 	width:95%; 	height:95%; float:left;}
+
+#content {
+width:44em;
+margin:0.6em 1.6em 0em 24em;
+float: left;
+min-height:77em;
+}
+
+
+#content1 {
+/* bunter text auf index seite*/
+
+width:46em;
+overflow:visible; float:left;}
+#content2 {
+/* text und bild auf index seite*/
+margin:-1.8em 0em 0em 0em;
+width:20em;
+background-position:center center; background-repeat:no-repeat;
+overflow:visible; float:left;
+
+}
+
+#contentb {
+/* IQ Test 1 und 2 */
+margin:1em 0em 1em 0em;
+
+text-align:center;
+}
+#contentb p {
+margin:0em 0em 1.5em 0em;
+font-size:1.1em;
+line-height:1.6em;
+/* color:#333333;*/
+letter-spacing:0em;
+word-spacing:0em;
+text-align:center;}
+
+/* Listen bei puns.html */
+div#content li { margin: 0.0em 0em 0.6em 0em;}
+div#content ol {list-style-type:decimal; list-style-position:outside; margin: 1em 0em 0em 2.5em;}
+div#content ul {list-style-type:disc; list-style-position:outside; margin: 1em 0em 0em 4em;}
+
+/* deaktiviert, da bei listen, siehe totes pferd die class anweisung überschrieben wurde */
+div#contentxx ol p { font-size:0.9em; font-weight: normal; color:#D2D2D2; line-height:1.1em; }
+
+#content h2{
+/* Überschrift im Text, padding um Raum zu schaffen */
+color:#666666;
+margin:1.8em 0 0.6em 0;
+padding:0.2em 0 0.2em 0.5em;
+font:bold 1.1em verdana, sans-serif;
+border-left:0.4em solid #009900;
+border-bottom:0.1em solid #009900;}
+
+#content p {margin:0.6em 1.2em 0em 1.2em;}
+
+#foot {
+clear:both;
+max-width:100%;
+
+margin:1em 0em 0em 0em;
+height: 40em;}
+
+
+#foot p{ text-align:justify; font-size:0.9em;}
+
+#nav {
+
+font-family:Tahoma,Arial,sans-serif;
+width:22em;
+height:0em;
+margin:2em 0em 0em 0em;
+float:left;}
+
+
+.nav1 a {padding:0em; color:#666666;  letter-spacing:0.1em; font-weight:bold; font-size: 0.9em; line-height:1.6em; }
+
+.nav1 a:visited {color:#888888; }
+.nav1 a:focus {color:#333333; }
+.nav1 a:hover {background-image:url(pfeil.jpg); background-position: center left; text-decoration:none; color:#CC3333; background-repeat:no-repeat;}
+.nav1 a:active { color:#FD8143; }
+
+#nav li.akta a{color: #94D480;}
+#nav li.aktb a{color: #DDDDDD;}
+#nav li.aktd a{}
+
+/* Für texte in Menu Lsite, z.b 'Word for ...' */
+.aktz p {padding:0em; color:#666666;  letter-spacing:0.1em; font-weight:bold; font-size: 0.9em; line-height:1.4em; }
+
+
+.big1 {line-height:0.9em; font-size: 0.9em;}
+.big2 {line-height:0.6em; font-size: 0.6em;}
+.nav2 a {color:#E55533; margin:0em 0em 0em 2.0em; font-size: 0.95em; background:none; font-weight:bold;letter-spacing:0.03em; line-height:1.4em;  }
+
+.nav2 li { margin-bottom:0.5em; }
+
+
+.nav2 a:visited {color:#FCAA53; }
+.nav2 a:focus {color:#FD8143; }
+.nav2 a:hover {background-image:url(pfeilk.jpg); text-decoration:none; background-position: center left; color:#CC3333; background-repeat:no-repeat;}
+.nav2 a:active { color:#FD8143; }
+/* eigentlich sollte nur .ul in nav2 diese Anweisung haben,*/
+.nav2  {margin:0.3em 0em 0.4em 0.0em;}
+
+#header {
+vertical-align: top;
+margin: -2em 1.8em 0em 31px; height:5em;
+width:67em;
+}
+
+/* Bild oben links (NOS) */
+.bild1 {float: left; width: 14em; }
+/* menue pfeil */
+.bildm {border-style: none; border-color: white; border:0; }
+/* Links sprache lengl, Flagge einfügen  (margin verschiebt den gesamten linktext, also padding anweden*/
+.bildl {height: 0.9em; width: 1.4em;}
+.lengl {padding:0em 1.8em 0em 0em; margin:0em 0.6em 0em 0em; background-image:url(../styles/english.png); background-position:center right; background-repeat:no-repeat;}
+
+
+/* menue innerhalb einer Seite clear:both;*/
+.mentop { clear:both;  font:normal 1em Verdana;  margin:0em 0em 1em 22em; width:55em; min-height:4em;  }
+.mentop a {font-weight:bold; letter-spacing:0.12em; margin:0em 0em 0em 2.0em; padding:0em 0em 0em 0em;  }
+.mentop a {color:#2A6699; }
+.mentop a:visited {color:#333333; }
+.mentop a:focus {color:#FD8143; }
+.mentop a:hover { color:#CC3333;}
+.mentop a:active { color:#666666; }
+.mentop ul  {}
+li.submen {display:inline; line-height:3em; white-space: nowrap; }
+
+li.submen :before { content:"\00BB"; color:#777777;}
+/* nicht gebraucht
+.mentop td {padding:0.0em 0em 0.0em 0.0em; margin:0.0em 0em 0.0em 0.0em; line-height:2.0em; border:0px none #FFFFFF; text-align:center; }
+.mentop p {text-align:center; line-height:2.0em; font-weight:200;}
+*/
+
+div#content p a:before {content:"\00BB" " ";} /* ">>" Vor "a" innerhlab von "content" einfügen, geht nicht für mehr als ein element auf einmal */
+div#content td a:before {content:"\00BB" " ";} /* ">>" Vor "a" innerhlab von "content" einfügen, geht nicht für mehr als ein element auf einmal */
+div#content h3 a:before {content:"\00BB" " ";} /* ">>" Vor "a" innerhlab von "content" einfügen, geht nicht für mehr als ein element auf einmal */
+
+#header h1 {text-align:right; font-size: 1.7em; letter-spacing:0.1em; font-weight:bold; font-family:Tahoma,Arial,sans-serif;color:#666666;}
+#header h1:first-letter { font-size:120%; color:#CC3333;}
+#header h2 {text-align:right; font-size: 0.8em; letter-spacing:0.1em;  font-family:Tahoma,Arial,sans-serif; color:#009900;}
+#header p {text-align:right; font-size: 0.8em;  font-family:Tahoma,Arial,sans-serif; margin-left:25em; color:#009900;}
+#header h3 {text-align:right; font-size: 0.8em; letter-spacing:0.1em;  font-family:Tahoma,Arial,sans-serif; color:#009900;}
+div#content
+
+.st01{font:lighter		1.0em 	"Arial Narrow", Arial;  			color:#FF6666; letter-spacing:0.04em;}
+.st02{font:normal		1.0em 	"Arial Narrow", Arial;     	 		color:#ADC88A; }
+.st03{font:normal		1.0em 	"Microsoft Sans Serif", Geneva;   	color:#009900;}
+.st43{font:normal		1.0em 	"Microsoft Sans Serif", Geneva;   	color:#6B7184;}
+.st04{font:normal		1.0em 	"Rockwell"; 	       				color:#CC0033;}
+
+.st05{font:normal		1.0em 	"Times New Roman", Times; 	 		color:#CDC51D;}
+.st06{font:italic		1.0em 	"Lucida Console", Arial; 	 		color:#6699FF;}
+.st07{font:normal		1.0em 	"Bodoni Black"; 	       	 		color:#44C944;}
+.st08{font:normal		1.0em 	"Modern", Arial; 		 			color:#FF6633;}
+.st09{font:normal		1.0em 	"Verdana", Arial; 		 			color:#009999;}
+.st10{font:normal		1.0em 	"New Berolina"; 		 			color:#FF3333;}
+.st11{font:normal		1.0em 	"Courier New", Courier; 	 		color:#0000FF;}
+.st12{font:italic		1.0em 	"Comic Sans MS"; 		 			color:#336600;}
+.st13{font:normal		0.9em 	"Tahoma"; 			 				color:#999900; letter-spacing:0.06em;}
+.st14{font:normal		1.0em 	"Monaco"; 			 				color:#FF9900;}
+.st15{font:normal		1.0em 	"Bookman Old Style"; 	 			color:#B30047;}
+.st16{font:normal		1.0em 	"Century Gothic Old Style"; 		color:#009900;}
+.st17{font:lighter		1.0em 	"Bitstream Charter Times"; 	 		color:#C81E1C;}
+.st18{font:normal		1.0em 	"Palatino Linotype"; 	 			color:#DD8823;}
+.st19{font:normal		1.0em 	"Verdana", Arial; 		 			color:#004080;}
+.st20{font:lighter		1em 	"Trebuchet MS", Helvetica;			color:#679D38;}
+.st21{font:lighter		1em 	"Trebuchet MS", Helvetica;			color:#B35812;}
+.st22{font:normal		1.0em 	"Arial Narrow", Arial;     	 		color:#666666;}
+.st23{font:normal		1.1em 	"Arial Narrow", Arial;		 		color:#60ADB5;}
+.st24{font:normal		1.1em 	"Lucida Sans Unicode", Arial; 		color:#F2B380;}
+
+.st31{color:#FF6666 !important;}
+.st32{color:#ADC88A !important;}
+/* Abwechselnd je Zeile*/
+.st33{color:#6B754D !important;}
+.st34{color:#6B956D !important;}
+
+.st35{color:#759090 !important;}
+.st36{color:#9090A5 !important;}
+
+/* grün - orange*/
+.sto0 {color:#B35812 !important;}
+.sto1 {color:#A33812 !important;}
+.sto2 {color:#C35518 !important;}
+.sto3 {color:#E58942 !important;}
+.sto4 {color:#F2B380 !important;}
+.sto5 {color:#FCAF81 !important;}
+
+
+.stg0 {color:#6B754D !important;}
+.stg1 {color:#6B956D !important;}
+.stg2 {color:#8A8F57 !important;}
+.stg3 {color:#A6A78A !important;}
+.stg4 {color:#A0A783 !important;}
+.stg5 {color:#C7CEAC !important;}
+
+
+.intend1  {padding-left:2em;}
+
+/* Ausrichtung von Text*/
+.txright {text-align:right;}
+.txleft {text-align:left;}
+.txcent {text-align:center;}
+.txjust {text-align:justify;}
+
+
+/* 
+Century Gothic Old Style #671E04 
+Webdings
+Trebuchet MS
+#C81E1C
+#60ADB5
+#DD8823  
+#679D38
+*/
+.linkf  a {
+color:#FF9900; font-size: 0.8em; font-weight:normal;
+margin:4.3em 0em 0em 2.3em;
+}
+
+div.bild-down img {float:left; margin:0.4em 2em 2em 0em;}
+div.bild-spruch img {float:right; margin:-0.6em -8.6em 0em 0em;}
+
+
+
+
+
+/* für bilder mit rechts neben logo mt rahmen
+div.bild21 {  position:absolute; top:4px; left:270px;  clip:rect(0px, 66px, 111px, 20px); }
+
+
+*/
+
+
+div.bild21 {  position:absolute; top:4px; left:278px;  clip:rect(0px, 52px, 111px, 2px); }
+div.bild21 p {font-size:0.7em;}
+
+
+@media (max-width: 32.438em) {
+
+	.nav1 li  {
+		display:block;
+		width: auto;
+		font-size:1.2em;
+
+		
+	}
+
+	.nav1 a {
+		padding: 0.5em;		
+	}
+	
+	#content {
+width:auto;
+margin:0.6em 0.6em 0em 0.6em;
+clear:both;
+
+}
+
+#nav {
+
+font-family:Tahoma,Arial,sans-serif;
+width:auto;
+height:auto;
+margin:0em 0em 0em 0em;
+clear:both;}
+
+
+#boxlg {
+margin: 0.8em 0em 0em 0.7em;
+padding: 0.0em;
+ width: auto;
+border: none;}
+
+#boxlg a  img {margin: 0em 1em 0em 1em; 	width:98%; 	height:98%; clear:both;}
+#header {
+vertical-align: top;
+margin:0.2em 0em 2.4em 0.2em; 
+width:auto;
+clear:both;
+}
+#header h1 {font-size:1.3em; margin-top:1.0em; display:block;}
+#foot {
+width:98%;
+
+margin:1em 0em 0em 0em;
+height: 20em;}
+#content  {margin-left:0.1em!important;}
+#content  p {margin-left:1.2em!important; margin-right:0.2em!important;}
+
+/* 
+
+
+#content  li {margin-left:0.0em!important; margin-right:0.0em!important;}
+#content  ol {margin-left:1.8em!important; margin-right:0.0em!important;}
+.mentop a {font-weight:bold; letter-spacing:0.12em; margin:0em 0em 0em 2.7em; padding:0em 0em 0em 0em;}
+*/
+
+
+.mentop li {display:block; margin:0em 0em 0.7em 0em; padding:0em 0em 0em 0em; line-height:inherit;}
+.mentop { margin:0.6em 0.2em 1em 0.2em; width:99%; }
+
+#boxlg a img  {width:50%;}
+#content p      {  font-size:95%;}
+#content  li  {  font-size:107%;}
+#content  td  {  font-size:95%;}
+
+
+	}
+	
+	
+.navf {margin:3.8em 0em 0em 1.0em;	}
+
+.navf li {margin-bottom:1.4em; 	}
+
+.autor {padding-bottom:1.9em; padding-top:1.9em;	font-size:115%;}
+.autor2 {color:#0c8e8c;	font-size:105%; font-style: italic;}
+p {line-height:1.5em; padding-bottom:0.8em;}
+
+.inlinie1 li {display:inline; padding-right:0.0em; line-height:1.95em;}
+.inlinie1  {margin-bottom:4em!important; margin-left:1em!important;}
+
+
+.aut1   {font-weight:bold; padding-top:1.4em;font-size:1.08em; list-style:none;}
+.aut2   {font-weight:normal; list-style:none;}
+.norm1 {font-weight:normal;}
+
+.aktc {margin-bottom:1em!important;}
+
+div#content .pbig9 { font-size:1.1em; margin:0.1em 0.1em 0.1em 0.1em; 
+border:solid 2px #009900;
+padding:0.4em 0.6em 0.4em 0.6em;
+}
+
+
+
+.aut6   {font-weight:normal; padding-top:1.4em;font-size:1.08em; list-style:none; color:#666666;}
+.aut4   {list-style:none;padding-top:1.4em;}
+
+.zitate   {color:#009000!important;}	
+
+a.zitate::before  {content:"\00BB" " ";}
+
+	/* just to get default settings */
+a {text-decoration:none;}
+:link,:visited { text-decoration:none; }
+
+a img,:link img,:visited img { border:none; }
+
+ul,ol {list-style:none; }
+
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1.2em; }
+
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,blockquote,fieldset,input,img,pre,form,body,html,a,table,tr,td { margin:0; padding:0; border-style:none; }
+
+
+/* allgemeine Link Farben */
+a {font-size:1em; font-weight: bold;}
+a { color:#888888; }
+a:hover, a:active  { color: #D25; }
+
+/* Letzte Bearbeitung 19.07.2005 */
+
+body {
+color:black;
+background-color:white;
+font-family:Verdana,Arial,sans-serif;
+font-size:0.9em;}
+
+
+p { font-size:0.9em;
+line-height:1.5em;
+color:#333333;
+letter-spacing:0em;
+word-spacing:0em;
+text-align:left; }
+
+h3 {
+/* default für index Welcome Text */
+font-size:1.8em;
+color:#D9372F;
+font-weight:bold;
+text-transform:capitalize;
+font-variant:small-caps;
+letter-spacing:0.3em;}
+
+
+#container {
+/* für den geamten Inhalt: head, content, nav ... */
+margin:0% 1% 1% 1%;}
+
+#content1 {
+/* bunter text auf index seite*/
+float: left;}
+/* 
+#content2 {
+text und bild auf index seite
+margin:0em 0em 0em 34em;
+width:17em;
+background-image:url(../styles/connexin.jpg); background-position:center center; background-repeat:no-repeat;
+}
+*/
+#content2 {
+/* text und bild auf index seite*/
+margin:-1.8em 0em 0em 0em;
+width:20em;
+background-position:center center; background-repeat:no-repeat;
+overflow:visible; float:left;
+
+}
+
+#contenta {
+/* box auf index seite */
+margin:0em 1.8em 0em 14em;}
+
+
+#content {
+margin:3em 1.8em 0em 0em;}
+
+
+#contentb {
+/* IQ Test 1 und 2 */
+margin:1em 0em 1em 0em;
+
+text-align:center;
+}
+#contentb p {
+margin:0em 0em 1.5em 0em;
+font-size:1.1em;
+line-height:1.6em;
+/* color:#333333;*/
+letter-spacing:0em;
+word-spacing:0em;
+text-align:center;}
+
+#content {
+width:60em;
+margin:0.6em 1.6em 0em 4em;
+float: left;
+}
+
+
+/* Listen bei puns.html */
+div#content li { margin: 0.0em 0em 0.6em 0em;}
+div#content ol {list-style-type:decimal; list-style-position:outside; margin: 1em 0em 0em 2.5em;}
+div#content ul {list-style-type:disc; list-style-position:outside; margin: 1em 0em 0em 4em;}
+div#content ol p { font-size:0.9em; font-weight: normal; color:#D2D2D2; line-height:1.1em; }
+
+
+
+
+#content h1{
+/* Überschrift im Text, padding um Raum zu schaffen */
+color:#666666;
+margin:1.8em 0 0.6em 0;
+padding:0.2em 0 0.2em 0.5em;
+font:bold 1.1em verdana, sans-serif;
+border-left:0.4em solid #003399;
+border-bottom:0.1em solid #003399;}
+
+#content p {margin:0.6em 1.2em 0em 1.2em;}
+
+#foot {
+clear:both;
+display:none;}
+
+#boxlg  {
+
+display:none;}
+
+#foot p{ text-align:center;}
+
+#nav {
+display:none;
+width:0; height:0;}
+
+
+.nav1 a {padding:0em; color:#777777;  letter-spacing:0.1em; font-weight:bold;  width: 100%; }
+
+.nav1 a:hover {background-image:url(pfeil.jpg); background-position: center left; text-decoration:none; color:#CC3333; background-repeat:no-repeat;}
+
+.nav2 a {margin:0.2em 0 0.2em 2.6em; font-size: 0.8em; background:none; font-weight:bold;letter-spacing:0.07em;  width: 100%;}
+
+.nav2 a:link {color:#FD8143; }
+.nav2 a:visited {color:#FD8143; }
+.nav2 a:hover {background-image:url(pfeilk.jpg); text-decoration:none; background-position: center left; color:#CC3333; background-repeat:no-repeat;}
+.nav2 a:active { color:#FD8143; }
+
+.mentop {
+display:none;
+width:0; height:0;}
+
+#header {
+vertical-align: top;
+margin: 0;
+
+height:2em;}
+
+/* Bild oben links (NOS) */
+.bild1 {float: left;  position: relative; top: 0.2em; left: 0em; display:none;}
+/* menue pfeil */
+.bildm {border-style: none; border-color: white; border:0; display:none;}
+
+#header h1 {text-align:center; font-size: 1.7em; letter-spacing:0.1em; font-weight:bold; font-family:Tahoma,Arial,sans-serif;color:#CC3333;}
+
+/* */
+img {display:none;} 
 
 </style>
 
